@@ -1,6 +1,7 @@
-// src/components/CurrencyList.js
 import React, { useState, useEffect } from 'react';
 import { checkStatus, json } from './utils';
+import './CurrencyConverter.css';
+
 
 const ExchangeRate = () => {
   const [rates, setRates] = useState({});
@@ -38,17 +39,28 @@ const ExchangeRate = () => {
 
   return (
     <div id="rates">
-      <h2>Exchange Rates</h2>
-      <select value={baseCurrency} onChange={handleBaseChange}>
+      <h2 className="converter-subtitle">Exchange Rates</h2>
+      <select className="converter-select" value={baseCurrency} onChange={handleBaseChange}>
         {currencies.map((currency) => (
           <option key={currency} value={currency}>{currency}</option>
         ))}
       </select>
-      <ul>
-        {Object.entries(rates).map(([currency, rate]) => (
-          <li key={currency}>{currency}: {rate.toFixed(2)}</li>
-        ))}
-      </ul>
+      <table className="converter-table">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(rates).map(([currency, rate]) => (
+            <tr key={currency}>
+              <td>{currency}</td>
+              <td>{rate.toFixed(2)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

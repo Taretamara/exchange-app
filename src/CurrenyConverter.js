@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { checkStatus, json } from './utils';
+import './CurrencyConverter.css';
 
 const CurrencyConverter = () => {
   const [amount, setAmount] = useState(1);
@@ -38,20 +39,20 @@ const CurrencyConverter = () => {
     setToCurrency(fromCurrency);
   };
   return (
-    <div id="converter">
-      <h2>Currency Converter</h2>
-      <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}>
+    <div className="converter-container">
+      <h2 className="converter-title">Currency Converter</h2>
+      <select className="converter-select" value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}>
         {currencies.map((currency) => (
           <option key={currency} value={currency}>{currency}</option>
         ))}
       </select>
-      <button onClick={handleSwap}>⇌</button>
-      <select value={toCurrency} onChange={(e) => setToCurrency(e.target.value)}>
+      <button onClick={handleSwap} className="converter-button">⇌</button>
+      <select className="converter-select" value={toCurrency} onChange={(e) => setToCurrency(e.target.value)}>
         {currencies.map((currency) => (
           <option key={currency} value={currency}>{currency}</option>
         ))}
       </select>
-      <p><input
+      <p className="converter-input-group"><input
         type="number"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}

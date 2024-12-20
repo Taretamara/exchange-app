@@ -28,7 +28,7 @@
 
 .converter-select {
   justify-content: center; 
-  margin-left: 130px;
+  margin-left: -80px;
   align-items: center;
   padding: 10px;
   border: 1px solid #ccc;
@@ -77,7 +77,7 @@
 .converter-button {
   margin-bottom: 20px;
   margin-left: 30px;
-  margin-right: -100px;
+  margin-right: 100px;
   justify-content: center;  
   align-items: center;
   display: inline-block;

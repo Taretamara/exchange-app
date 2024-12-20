@@ -10,7 +10,7 @@ const App = () => (
   <Router>
     <Navbar />
     <Switch>
-      <Route path="/" exact component={CurrencyConverter} />
+      <Route path="/converter" component={CurrencyConverter} />
       <Route path="/rates" component={ExchangeRate} />
     </Switch>
     <Footer />

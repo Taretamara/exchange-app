@@ -114,7 +114,7 @@ class CurrencyConverter extends Component {
         fromCurrency: prevState.toCurrency,
         toCurrency: prevState.fromCurrency,
       }),
-      this.fetchHistoricalData // Ensure the chart updates after swapping
+      this.fetchHistoricalData 
     );
   };
 

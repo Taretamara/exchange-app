@@ -122,3 +122,32 @@
     padding: 8px;
   }
 }
+
+.exchange-rates-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.currency-selector {
+  margin: 10px 0;
+}
+
+.converter-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.converter-table th,
+.converter-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.converter-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+

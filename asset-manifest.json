@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/exchange-app/static/css/main.134d20bc.css",
+    "main.js": "/exchange-app/static/js/main.1dd01606.js",
+    "static/js/453.5c16d76f.chunk.js": "/exchange-app/static/js/453.5c16d76f.chunk.js",
+    "index.html": "/exchange-app/index.html",
+    "main.134d20bc.css.map": "/exchange-app/static/css/main.134d20bc.css.map",
+    "main.1dd01606.js.map": "/exchange-app/static/js/main.1dd01606.js.map",
+    "453.5c16d76f.chunk.js.map": "/exchange-app/static/js/453.5c16d76f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.134d20bc.css",
+    "static/js/main.1dd01606.js"
+  ]
+}

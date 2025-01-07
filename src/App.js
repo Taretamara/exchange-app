@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 
 const App = () => (
-  <Router>
+  <Router basename="/exchange-app">
     <Navbar />
     <Switch>
       <Route path="/converter" component={CurrencyConverter} />
